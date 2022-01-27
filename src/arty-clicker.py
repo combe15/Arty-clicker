@@ -4,9 +4,7 @@ import time
 import numpy as np
 import pyautogui
 import win32com.client
-import win32con
 import win32gui
-import win32ui
 import cv2 as cv
 from PyQt5 import QtCore, QtWidgets
 from PyQt5.QtWidgets import (
@@ -42,23 +40,25 @@ class MainWindow(QMainWindow):
         self.label.resize(150, 15)
         self.label.move(35, 20)
 
+        # Fire button
         self.fireBtn = QPushButton("Fire", self)
         self.fireBtn.resize(100, 32)
         self.fireBtn.move(50, 50)
         self.fireBtn.clicked.connect(self.fireHandler)
 
+        # Set Speed button
         self.speedBtn = QPushButton("Set Speed", self)
         self.speedBtn.resize(100, 32)
         self.speedBtn.move(50, 100)
         self.speedBtn.clicked.connect(self.setSpeed)
         
+        # Checkbox
         self.biterFilter = QCheckBox('Fire only in turret coverage?', self)
         self.biterFilter.resize(150, 32)
         self.biterFilter.move(32, 125)
         self.biterFilter.toggle()
         
         # Info panel
-        
         self.speedLabel = QLabel(self)
         self.speedLabel.setText("Speed: 15.0 CPS")
         self.speedLabel.resize(150, 15)
