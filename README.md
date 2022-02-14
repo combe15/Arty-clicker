@@ -8,7 +8,7 @@ An automatic Factorio artillery clicker.
 4. Click the 'Fire' Button and pray it works.
 
 ## To Install:
-Note: This program was built and tested on Windows, Linux or Mac OS functionality is unknown.
+Note: This program was built and tested on Windows only; Linux or Mac OS functionality is unknown.
 
 1. Pull this repository into a folder and have Python 3.8 or higher installed.
 2. Open repository folder in Command Prompt (not Powershell).
